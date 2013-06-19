@@ -41,47 +41,28 @@
 			
 			<div class="well">
 
-				<form method="post" action="">
+				<form method="post" action="CadastrarEmpresa">
 				<fieldset>
 					  
 					<legend>Cadastro de Empresa</legend>
-					<input type="text" placeholder="nome da empresa" id="nome" /><br />
+					<input type="text" placeholder="nome da empresa" name="nome" /><br />
 
-					<button class="btn btn-primary" type="button" id="salvar">
+					<button class="btn btn-primary" type="submit" id="salvar">
 						<span class="icon-plus-sign icon-white"></span>&nbsp;
 						Salvar
 					</button>
-					<button class="btn btn-success" type="button" id="salvar">
-						<span class="icon-plus-sign icon-white"></span>&nbsp;
-						Buscar
-					</button><br /><br />
 					
-					<table class="table table-striped" id="tblempresa">
-						<tr>
-							<th>Nome</th>
-							<th></th>
-						</tr>
-						<tr>
-							<td>Empresa1</td>
-							<td>
-								<button class="btn btn-small btn-danger pull-right" type="button" />
-									<span class="icon-trash icon-white"></span>&nbsp;
-									Deletar
-								</button>
-							</td>
-						</tr>
-						<tr>
-							<td>Empresa2</td>
-							<td>
-								<button class="btn btn-small btn-danger pull-right" type="button">
-									<span class="icon-trash icon-white"></span>&nbsp;
-									Deletar
-								</button>
-							</td>
-						</tr>
-					</table>
+					
 
 				</fieldset>
+				</form>
+				
+				<form method="post" action="BuscarEmpresa">
+				
+					<button class="btn btn-success" type="submit" id="buscar">
+						<span class="icon-plus-sign icon-white"></span>&nbsp;
+						Buscar
+					</button>
 				</form>
 				
 			</div>

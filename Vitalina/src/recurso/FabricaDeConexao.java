@@ -12,6 +12,7 @@ public class FabricaDeConexao {
 			return DriverManager.getConnection("jdbc:mysql://localhost/vitalina","root","lasombra");
 		}
 		catch (ClassNotFoundException e){
+			System.out.println("Aqui!");
 			throw new SQLException(e.getMessage());
 		}
 		

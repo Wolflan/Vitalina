@@ -46,7 +46,7 @@ public class TesteLinha {
 		//daoLinha.deletar(4);
 		
 		//ATUALIZAR ESPECÍFICO
-		daoLinha.update(new Linha("Praias",1));
+		//daoLinha.update(new Linha("Praias",1));
 	}
 
 }
