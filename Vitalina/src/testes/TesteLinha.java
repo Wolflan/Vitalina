@@ -36,17 +36,17 @@ public class TesteLinha {
 		System.out.println("Ok!");
 		
 		//BUSCAR ESPECÍFICO
-		Linha local = daoLinha.buscar(2);
+		Linha local = daoLinha.buscar(1);
 		
 		System.out.println(local.getIdLinha());
 		System.out.println(local.getNome());
 		System.out.println(local.getIdEmpresa());
 		
 		//DELETAR ESPECÍFICO
-		daoLinha.deletar(4);
+		//daoLinha.deletar(4);
 		
 		//ATUALIZAR ESPECÍFICO
-		daoLinha.update(new Linha("Praias",2));
+		daoLinha.update(new Linha("Praias",1));
 	}
 
 }

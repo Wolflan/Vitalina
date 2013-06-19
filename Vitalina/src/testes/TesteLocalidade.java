@@ -34,14 +34,14 @@ public class TesteLocalidade {
 		System.out.println("Ok!");
 		
 		//BUSCAR ESPECÍFICO
-		Localidade local = daoLocalidade.buscar(2);
+		Localidade local = daoLocalidade.buscar(1);
 		
-		System.out.println(local.getidLocalidade());
-		System.out.println(local.getNome());
+		System.out.print(local.getidLocalidade()+"\t");
+		System.out.print(local.getNome()+"\t");
 		System.out.println(local.getTipo());
 		
 		//DELETAR ESPECÍFICO
-		daoLocalidade.deletar(10);
+		//daoLocalidade.deletar(10);
 		
 		//ATUALIZAR ESPECÍFICO
 		daoLocalidade.update(new Localidade(1,"Camilo",'B'));

@@ -160,7 +160,7 @@ public class DAOEmpresa implements IDAO<Empresa> {
 		// TODO Auto-generated method stub
 		try {
 			con = FabricaDeConexao.getConnection();
-			String query = "SELECT count(*) FROM empresa";
+			String query = "SELECT max(idEmpresa) FROM empresa";
 			ps = con.prepareStatement(query);
 			result = ps.executeQuery();
 			

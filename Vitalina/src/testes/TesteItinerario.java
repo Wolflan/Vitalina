@@ -19,7 +19,7 @@ public class TesteItinerario {
 		// TODO Auto-generated method stub
 
 		
-		Itinerario itinerario = new Itinerario(5,2,1);
+		Itinerario itinerario = new Itinerario(2,2,1);
 		DAOItinerario daoItinerario = new DAOItinerario();
 		//SALVAR
 		daoItinerario.salvar(itinerario);

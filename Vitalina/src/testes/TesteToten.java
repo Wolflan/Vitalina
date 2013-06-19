@@ -35,14 +35,14 @@ public class TesteToten {
 		System.out.println("Ok!");
 		
 		//BUSCAR ESPECÍFICO
-		Toten toten1 = daoToten.buscar(2);
+		Toten toten1 = daoToten.buscar(1);
 		
 		System.out.print(toten1.getIdToten()+"\t");
 		System.out.println(toten1.getIdLocalidade());
 		
 		
 		//DELETAR ESPECÍFICO
-		daoToten.deletar(3);
+		//daoToten.deletar(3);
 		
 		//ATUALIZAR ESPECÍFICO
 		//O banco reclama de violação caso tente trocar um toten para outra localidade

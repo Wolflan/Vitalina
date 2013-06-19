@@ -20,7 +20,7 @@ public class TesteEmpresa {
 		// TODO Auto-generated method stub
 
 		
-		Empresa empresa = new Empresa(1,"Empresa");
+		Empresa empresa = new Empresa("WolfCorporation");
 		empresa.addLinha(new Linha("Praias",empresa.getIdEmpresa()));
 		empresa.addLinha(new Linha("Centro",empresa.getIdEmpresa()));
 		empresa.addLinha(new Linha("Praças",empresa.getIdEmpresa()));
@@ -50,7 +50,7 @@ public class TesteEmpresa {
 	
 		
 		//DELETAR ESPECÍFICO
-		daoEmpresa.deletar(8);
+		//daoEmpresa.deletar(8);
 		
 		//ATUALIZAR ESPECÍFICO
 		daoEmpresa.update(new Empresa(1,"Camilo"));
