@@ -1,0 +1,100 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+	
+	<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  
+    <script  src="js/bootstrap.js"></script>
+</head>
+
+<body>
+	
+	<div class="container">
+		<div class="hero-unit">
+			<div class="navbar">
+			  <div class="navbar-inner">
+				  
+				<a class="brand" href="#">Toten de Vitalina</a>
+				
+				<ul class="nav pull-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							Cadastrar <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Linha</a></li>
+							<li><a href="#">Empresa</a></li>
+							<li><a href="#">Local</a></li>
+							<li><a href="#">Itinerário</a></li>
+							<li><a href="#">Toten</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Sair</a></li>
+				</ul>
+				
+			  </div><!--fim navbar-inner-->
+			</div><!--fim navbar-->
+			
+			<div class="well">
+
+				<form method="post" action="">
+				<fieldset>
+					  
+					<legend>Cadastro de Itinerário</legend>
+
+					<select id="linha">
+						<option>Escolha a Linha</option>
+					</select><br />
+					<select id="local">
+						<option>Escolha o Local</option>
+					</select><br />
+
+					<input type="text" placeholder="nome do itinerario" id="nome" /><br />
+
+					<button class="btn btn-primary" type="button" id="salvar">
+						<span class="icon-plus-sign icon-white"></span>&nbsp;
+						Salvar
+					</button>
+					<button class="btn btn-success" type="button" id="salvar">
+						<span class="icon-plus-sign icon-white"></span>&nbsp;
+						Buscar
+					</button><br /><br />
+					
+					<table class="table table-striped" id="tblitinerario">
+						<tr>
+							<th>Nome</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td>Empresa1</td>
+							<td>
+								<button class="btn btn-small btn-danger pull-right" type="button" />
+									<span class="icon-trash icon-white"></span>&nbsp;
+									Deletar
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>Empresa2</td>
+							<td>
+								<button class="btn btn-small btn-danger pull-right" type="button">
+									<span class="icon-trash icon-white"></span>&nbsp;
+									Deletar
+								</button>
+							</td>
+						</tr>
+					</table>
+
+				</fieldset>
+				</form>
+				
+			</div>
+			<h3 class="pull-right"><small>Toten de Vitalina - SI-IFMA Versão 1.0</small></h3>
+		</div><!--fim hero-unit-->
+	</div><!--fim container-->
+</body>
+</html>
