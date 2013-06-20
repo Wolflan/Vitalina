@@ -8,8 +8,8 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/Wolflan/Desktop/apache-tomcat-7.0.41/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Wolflan/git/Vitalina/Vitalina/WebContent/WEB-INF/lib/mysql-connector-java-5.1.25-bin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Wolflan/Desktop/apache-tomcat-7.0.41/lib/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Wolflan/git/Vitalina/Vitalina/WebContent/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Wolflan/git/Vitalina/Vitalina/WebContent/WEB-INF/lib/tomcat-jdbc.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
