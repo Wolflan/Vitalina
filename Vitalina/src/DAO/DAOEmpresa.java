@@ -184,7 +184,7 @@ public class DAOEmpresa implements IDAO<Empresa> {
 		// TODO Auto-generated method stub
 		try {
 			
-			System.out.println(pesquisa);
+			
 			con = FabricaDeConexao.getConnection();
 			String query = "SELECT * FROM empresa WHERE nomeEmpresa like ?";
 			ps = con.prepareStatement(query);

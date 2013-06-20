@@ -62,7 +62,7 @@
 				</form>
 				
 				<form method="post" action="BuscarEmpresa.jsp">
-					<input type="text" placeholder="buca por nome da empresa" name="buscar" /><br />
+					<input type="text" placeholder="busca por nome da empresa" name="buscar" /><br />
 					<button class="btn btn-success" type="submit" id="busca">
 						<span class="icon-plus-sign icon-white"></span>&nbsp;
 						Buscar

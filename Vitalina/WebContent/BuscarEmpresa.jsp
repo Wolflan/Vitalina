@@ -46,25 +46,21 @@
 			
 			<div class="well">
 
-				<form method="post" action="CadastrarEmpresa">
+				
 				<fieldset>
 					  
-					<legend>Cadastro de Empresa</legend>
-					<input type="text" placeholder="nome da empresa" name="nome" /><br />
-
-					<button class="btn btn-primary" type="submit" id="salvar">
-						<span class="icon-plus-sign icon-white"></span>&nbsp;
-						Salvar
-					</button>
-					
-					<button class="btn btn-success" type="submit" id="buscar">
+					<legend>Busca de Empresa</legend>
+					<form method="post" action="BuscarEmpresa.jsp">
+					<input type="text" placeholder="busca por nome da empresa" name="buscar" /><br />
+					<button class="btn btn-success" type="submit" id="busca">
 						<span class="icon-plus-sign icon-white"></span>&nbsp;
 						Buscar
 					</button>
+					</form>
 					
 
 				</fieldset>
-				</form>
+				
 				
 				<table class="table table-striped" id="tblempresa">
 					<tr>
