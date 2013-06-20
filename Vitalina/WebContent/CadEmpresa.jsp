@@ -69,7 +69,8 @@
 				<table class="table table-striped" id="tblempresa">
 					<tr>
 						<th style="width: 30px;">Id</th>
-						<th colspan="3">Nome</th>
+						<th >Nome</th>
+						<th style="width: 50px;">Ação</th>
 					</tr>
 					
 					<%
@@ -83,6 +84,7 @@
 								<tr>
 									<td><%= x.getIdEmpresa() %></td>
 									<td><%= x.getNome() %></td>
+									<td><a href="EditEmpresa.jsp?id=<%= x.getIdEmpresa()%>">Edit</a></td>
 								</tr>
 							
 							<% 

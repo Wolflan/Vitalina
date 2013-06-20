@@ -53,7 +53,7 @@ public class TesteEmpresa {
 		//daoEmpresa.deletar(8);
 		
 		//ATUALIZAR ESPECÍFICO
-		//daoEmpresa.update(new Empresa(1,"Camilo"));
+		daoEmpresa.update(new Empresa(10,"FODA"));
 	}
 
 }
