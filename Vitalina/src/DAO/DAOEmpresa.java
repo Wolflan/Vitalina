@@ -179,4 +179,45 @@ public class DAOEmpresa implements IDAO<Empresa> {
 		return 0;
 	}
 
+	@Override
+	public ArrayList<Empresa> buscar(String pesquisa) {
+		// TODO Auto-generated method stub
+		try {
+			
+			System.out.println(pesquisa);
+			con = FabricaDeConexao.getConnection();
+			String query = "SELECT * FROM empresa WHERE nomeEmpresa like ?";
+			ps = con.prepareStatement(query);
+			ps.setString(1, pesquisa + "%");
+			result = ps.executeQuery();
+			
+			ArrayList<Empresa> retorno = new ArrayList<Empresa>();
+			DAOLinha daoLinha = new DAOLinha();
+			ArrayList<Linha> linhas = daoLinha.buscar();
+			
+			while (result.next()) {
+				Empresa empresa = new Empresa( result.getInt(1), result.getString(2) );
+				
+				for(Linha x : linhas) {
+					if (empresa.getIdEmpresa() == x.getIdEmpresa()) {
+						empresa.addLinha(x);
+					}
+				}
+				
+				retorno.add(empresa);
+			}
+			
+			ps.close();
+			con.close();
+			result.close();
+			
+			return retorno;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return null;	
+	}
 }

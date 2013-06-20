@@ -89,4 +89,9 @@ public class DAOItinerario implements IDAO<Itinerario> {
 		return 0;
 	}
 
+	@Override
+	public ArrayList<Itinerario> buscar(String pesquisa) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

@@ -153,5 +153,11 @@ public class DAOToten implements IDAO<Toten> {
 		}
 		return 0;
 	}
+	
+	@Override
+	public ArrayList<Toten> buscar(String pesquisa) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

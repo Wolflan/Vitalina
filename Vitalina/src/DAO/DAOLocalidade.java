@@ -152,4 +152,9 @@ public class DAOLocalidade implements IDAO<Localidade> {
 		return 0;
 	}
 
+	@Override
+	public ArrayList<Localidade> buscar(String pesquisa) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

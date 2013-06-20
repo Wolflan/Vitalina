@@ -151,5 +151,11 @@ public class DAOLinha implements IDAO<Linha> {
 		}
 		return 0;
 	}
+	
+	@Override
+	public ArrayList<Linha> buscar(String pesquisa) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

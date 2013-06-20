@@ -57,16 +57,13 @@
 						Salvar
 					</button>
 					
-
-				</fieldset>
-				</form>
-				
-				<form method="post" action="BuscarEmpresa.jsp">
-					<input type="text" placeholder="buca por nome da empresa" name="buscar" /><br />
-					<button class="btn btn-success" type="submit" id="busca">
+					<button class="btn btn-success" type="submit" id="buscar">
 						<span class="icon-plus-sign icon-white"></span>&nbsp;
 						Buscar
 					</button>
+					
+
+				</fieldset>
 				</form>
 				
 				<table class="table table-striped" id="tblempresa">
@@ -80,7 +77,7 @@
 						ArrayList<Empresa> empresas = new ArrayList<Empresa>();
 						DAOEmpresa daoEmpresa = new DAOEmpresa();
 						
-						empresas = daoEmpresa.buscar();
+						empresas = daoEmpresa.buscar(request.getParameter("buscar"));
 						
 						for (Empresa x : empresas) {
 							%>
