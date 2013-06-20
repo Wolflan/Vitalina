@@ -3,6 +3,7 @@ package servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -42,6 +43,8 @@ public class CadastrarEmpresa extends HttpServlet {
 		Empresa empresa = new Empresa(request.getParameter("nome"));
 		DAOEmpresa daoEmpresa = new DAOEmpresa();
 		daoEmpresa.salvar(empresa);
+		RequestDispatcher r = request.getRequestDispatcher( "saida.html" );  
+		r.forward( request, response );
 	}
 
 }
